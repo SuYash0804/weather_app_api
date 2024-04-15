@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.showOrder {
+  position: relative;
+}
+
+.showOrder::after {
+  content: url(./icons/sort_down.png);
+  position: absolute;
+  rotate: 180deg;
+  right: -26px;
+  bottom: 7.5px;
+  scale: 0.5;
+}
+
+.showOrder::before {
+  content: url(./icons/sort_down.png);
+  position: absolute;
+  right: -26px;
+  top: 7.5px;
+  scale: 0.5;
+}
+
+.desc::after, .asc::before {
+  opacity: 0.5;
+}
